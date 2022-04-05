@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BARON Bakery | Reservation</title>
+        <!-- <link href="../libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" /> -->
+        <link href="img/baroncircle.png" rel="icon" type="image/png" sizes="16x16" />
+        <link href="reservation.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="whole-box">
+
+            <nav>
+
+                <div class="logo">
+                    <img src="img/baroncirclescale.png" alt="baroncirclescale" />
+                </div>
+
+                <ul>
+                    <li><a href="homepage.html" target="_blank">HOME</a></li>
+                    <li><a href="products.html" target="_blank">ORDER</a></li>
+                    <li><a href="reservation.html" target="_self">RESERVATION</a></li>
+                    <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
+                    <li><a href="login.html" target="_blank">LOG IN</a></li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </ul>
+
+            </nav>
+
+            <form action="" method="">
+
+                
+                <div class="step1-container">
+                    <h2>Step 1</h2>
+                    <label>Name</label>
+                    <input type="text" name="cusname" id="customername" class="name" placeholder="Enter your name" autocomplete="off" required />
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" id="phno" class="phno" placeholder="Enter phone number" autocomplete="off"  required />
+                    <label>Email Address</label>
+                    <input type="email" name="email" id="emailaddress" class="email" placeholder="Enter email address" autocomplete="off"  required  />
+                </div> 
+
+               
+                <div class="step2-container">
+                    <h2>Step 2</h2>
+                    <label>Number of people</label>
+                    <input type="number" name="numberofpeople" id="number" class="numberofpeople" placeholder="Enter number of people" autocomplete="off" min="1" max="30" required/>
+                    <label>Date & Time</label>
+                    <input type="datetime-local" name="date&time" id="date&time" class="datetime" placeholder="Choose Date & Time" autocomplete="off" required />
+                    <label>Table Number</label>
+                    <input type="number" name="tablenumber" id="tablenumber" class="tablenumber" placeholder="Choose table number" autocomplete="off" min="1" max="40" required />
+                    <label>Payment Method</label>
+                    <input type="radio" name="paymentmethod" id="payment1" value="1" class="payment1"  />
+                    <label>KBZPay</label>
+                    <input type="radio" name="paymentmethod" id="payment2" value="2" class="payment2"  />
+                    <label>CBPay</label>
+                    <input type="radio" name="paymentmethod" id="payment3" value="3" class="payment3"  />
+                    <label>WavePay</label>
+
+                    <button type="reset" class="cancel">Cancel</button>
+                    <button type="submit" class="reserve">Reserve</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="footer">
+
+            <h3>BARON Bakery Co.,Ltd.</h3>
+
+            <ul>
+                <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com">BARON Bakery</a></li>
+                <li><i class="fab fa-instagram-square"></i><a href="https://www.instagram.com">baron_bakery</a></li>
+                <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com">Baron Bakery</a></li>
+                <li><i class="far fa-envelope"></i><a href="https://www.google.com/mail">baronbakery@gmail.com</a></li>
+                <li><i class="fas fa-phone"></i><a href="tel:09123456789">09987654321</a></li>
+                <li><i class="fas fa-map-marker-alt"></i><a href="#">Loacted in Junction Square,Yangon</a></li>
+            </ul>
+
+            <small>&#169;Copyright2022 BARON Bakery Co.,Ltd.All right reserved.</small>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Confirmation</title>
+        <link href="img/baroncircle.png" rel="icon" type="image/png" sizes="16x16" />
+        <link href="order.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <div class="confirm-box">
+
+            <div class="logo">
+                <img src="img/baroncirclescale.png" alt="baroncirclescale" />
+            </div>
+
+            <form action="" method="">
+
+                
+                <div class="name">
+                    <label for="customername">Name</label>
+                    <input type="text" name="cusname" id="customername" class="cusname" /><br/>
+                </div>
+                
+                <div class="phoneno">
+                    <label>Phone Number</label><br/>
+                    <input type="text" name="phno" id="phone" class="phno" /><br/>
+                </div>
+
+                <label class="choose">Please Choose one of these:</label><br/>
+
+                <div class="service">
+                    <label>Service:</label><br/>
+                    <input type="radio" name="service" id="dinein" value="1"/>
+                    <label>Dine in</label>
+                    <input type="radio" name="service" id="takeaway" value="2" />
+                    <label>Take away</label>
+                    <input type="radio" name="service" id="delivery" value="3" >
+                    <label>Delivery</label>
+                </div>
+
+                <div class="payment-method">
+                    <label>Payment Method:</label><br/>
+                    <input type="radio" name="payment" id="kbzpay" value="1" />
+                    <label>KBZPay</label>
+                    <input type="radio" name="payment" id="cbpay" value="2" />
+                    <label>CBPay</label>
+                    <input type="radio" name="payment" id="wavepay" value="3" />
+                    <label>WavePay</label>
+                </div>
+
+            </form>
+
+            <p>Are you sure want to confirm?</p>
+
+            <button class="yes-btn">Yes</button>
+
+            <button class="no-btn">No</button>
+
+        </div>
+
+    </body>
+</html>

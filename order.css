@@ -1,0 +1,177 @@
+@font-face{
+    font-family:courgette;
+    src:local('Courgette-Regular'),url('libs/fonts/courgette/Courgette-Regular.ttf') format('woff');
+}
+
+:root{
+    --pink:rgb(247, 235, 237);
+    --pink1:#FCBAED;
+    --pink2:#FCBACC;
+    --pink3:#EABAFC;
+}
+
+*{
+    font-family:courgette;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background-image:url('img/background8.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.confirm-box{
+    width:400px;
+    height:510px;
+    background-color:#f4f4f4;
+    border-radius:20px;
+
+    position:relative;
+}
+
+.confirm-box > .logo{
+    width:90px;
+    height:90px;
+
+    position:absolute;
+    top:15px;
+    left:50%;
+
+    transform:translate(-50%);
+}
+
+.confirm-box > .logo > img{
+    width:100%;
+    height:100%;
+}
+
+.confirm-box > form{
+    /* background-color:skyblue; */
+    width:300px;
+    height:280px;
+
+    position:absolute;
+    top:130px;
+    left:50px;
+}
+
+form > .name{
+    width:100%;
+    height:50px;
+    /* background-color:red; */
+
+    position:absolute;
+    top:0;
+}
+
+.name > input{
+    width:100%;
+    background-color:#f4f4f4;
+    padding:5px;
+    border:1px solid gray;
+
+    position:absolute;
+    top:25px;
+    left:0;
+}
+
+form > .phoneno{
+    width:100%;
+    height:50px;
+    /* background-color:blue; */
+
+    position:absolute;
+    top:70px;
+    left:0;
+}
+
+.phoneno > input{
+    width:100%;
+    background-color:#f4f4f4;
+    padding:5px;
+    border:1px solid gray;
+
+    position:absolute;
+    top:25px;
+    left:0;
+}
+
+form > .choose{
+    position:absolute;
+    top:135px;
+    left:0;
+}
+
+form > .service{
+    /* background-color:red; */
+
+    position:absolute;
+    top:170px;
+    left:5px;
+}
+
+.service > label:first-child{
+    position:absolute;
+    top:-5px;
+}
+
+form > .payment-method{
+    /* background-color:red; */
+
+    position:absolute;
+    top:230px;
+    left:5px;
+}
+
+.payment-method > label:first-child{
+    position:absolute;
+    top:-7px;
+}
+
+.confirm-box > p{
+    font-size:14px;
+    font-weight:bold;
+
+    position:absolute;
+    bottom:50px;
+    left:105px;
+}
+
+.confirm-box > .yes-btn,.confirm-box > .no-btn{
+    /* background:linear-gradient(
+        var(--pink),
+        navy
+    ); */
+    background-color:#555;
+    color:#fff;
+    text-transform:uppercase;
+    border:none;
+    padding:5px 30px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.confirm-box > .yes-btn{
+    position:absolute;
+    bottom:25px;
+    left:60px;
+}
+
+.confirm-box > .no-btn{
+    position:absolute;
+    bottom:25px;
+    right:80px;
+}
+
+form input:focus{
+    outline:none;
+}
